@@ -42,6 +42,14 @@ Checkout **SupaProxy**. An API proxy that allows you to make your API's public.
 
     Currently we aren't supporting new API's. We're working on it and some other features.
 
+
+#### How to use.
+Access the Frontend through [Frontend](https://supa-proxy-fe-v2.vercel.app)
+and Backend base url is [Backend](https://supa-proxy.herokuapp.com)
+
+To vist a URL with route `/api/dev-to` in the hosted URL try this:
+`https://supa-proxy.herokuapp.com/api/dev-to`
+
 ### SceenShots.
 
 ![Home Page](./public//home.png)
