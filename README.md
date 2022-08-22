@@ -1,22 +1,48 @@
-# cra-template-tailwindcss-typescript
+## SUPA-PROXY
 
-A streamlined [Tailwind CSS v3.1](https://tailwindcss.com) template for [Create React App](https://github.com/facebook/create-react-app) in [TypeScript](https://www.typescriptlang.org/).
+#### Problem's We Have
 
-> This template installs and sets up [Tailwind CSS](https://tailwindcss.com) with TypeScript support.
 
-## Usage
+Need to make your API's public? No problem! We covered you.
+Checkout **SupaProxy**. An API proxy that allows you to make your API's public.
 
-```bash
-npx create-react-app --template tailwindcss-typescript
-```
+#### SupaProxy provides three solutions for your API
 
-## Credits
+    1.Rate Limit Layer
+    2.Cache Layer
+    3.Proxy Layer
 
-This project was made possible thanks to the following projects.
+#### How we solve Problems.
 
-1. [GeoffSelby/cra-template-tailwindcss](https://github.com/GeoffSelby/cra-template-tailwindcss) - A streamlined Tailwind CSS template for Create React App (in JavaScript).
-2. [cra-template-typescript](https://github.com/facebook/create-react-app/tree/master/packages/cra-template-typescript) - An official TypeScript template for create-react-app.
+    SupaProxy Provides three layer of security to your API. 
+    First we set the rate limit for your API.This helps to limit the access to your API.
+    Second we have Cache Layer. This layer helps to cache the data of your API and Prevent overload of your server.
+    Third we have Proxy Layer. This layer helps to proxy the data of your API and Prevent the direct access to the API.
 
-## License
+#### Additional Functionalities.
+    
+    Stats Page for Monitoring the performance of your API.
+    Graph to visualize the most requested endpoints and most used methods
 
-MIT © [Sung M. Kim](https://sung.codes)
+
+#### Tech Stack Used.
+
+    1. NodeJs + Typescript + Express
+    2. ReactJS + Typescript + TailwindCSS
+
+#### Technologies Used.
+
+    1. Supabase Auth
+    2. Supabase Database
+    3. Supabase UI
+    4. Redis Cache
+    5. Axios
+
+### SceenShots.
+
+![Home Page](./public//home.png)
+![Stats Page](./public//stats.png)
+
+### The Team.
+@pintoinfant - [Twitter](https://twitter.com/pinto_infant), [Github](https://github.com/pintoinfant)
+@gabrielantony - [Twitter](https://twitter.com/gabrielaxyeth), [Github](https://github.com/gabrielantonyxaviour)
