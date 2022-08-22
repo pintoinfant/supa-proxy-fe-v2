@@ -38,6 +38,10 @@ Checkout **SupaProxy**. An API proxy that allows you to make your API's public.
     4. Redis Cache
     5. Axios
 
+#### Limitations.
+
+    Currently we aren't supporting new API's. We're working on it and some other features.
+
 ### SceenShots.
 
 ![Home Page](./public//home.png)
