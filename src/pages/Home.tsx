@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { supabase } from "../client";
 import { useNavigate } from "react-router-dom";
-import { Button } from "@supabase/ui";
-import ModalView from "../components/ModalView";
+import { Button, Modal, Typography } from "@supabase/ui";
 
 export default function Home() {
-  // const [user, setUser] = useState<any>();
   const [userData, setUserData] = useState<any>();
   const navigate = useNavigate();
   const [visible, setVisible] = useState(false);
 
   function toggle() {
+    console.log("Button Clicked");
     setVisible(!visible);
   }
 
@@ -33,6 +32,16 @@ export default function Home() {
   return (
     <>
       <div className="flex items-center justify-center h-screen flex-col p-3">
+        <Modal
+          closable
+          title="This modal has a close button"
+          description="Description of modal"
+          visible={visible}
+          onCancel={toggle}
+          onConfirm={toggle}
+        >
+          <Typography.Text>This is the content of the Modal</Typography.Text>
+        </Modal>
         {userData &&
           userData.map((item: any) => {
             return (
@@ -53,9 +62,14 @@ export default function Home() {
               </div>
             );
           })}
-        <Button onClick={handleLogout}>Logout</Button>
-        {/* <Button onClick={toggle}>Add API</Button>
-        <ModalView visible={visible} onCancel={toggle} onConfirm={toggle} /> */}
+        <div className="flex">
+          <Button onClick={handleLogout} className="mx-2">
+            Logout
+          </Button>
+          <Button onClick={toggle} type="default" className="mx-2">
+            Open modal
+          </Button>
+        </div>
       </div>
     </>
   );
