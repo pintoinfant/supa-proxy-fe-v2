@@ -24,3 +24,5 @@ yarn-error.log*
 
 # Tailwind processed CSS 
 index.css
+
+.env
